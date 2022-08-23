@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <nav>
+        <div class="judul-container">
+            <img class="logo" src="team.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<body>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Budaya Aceh</h1>
+            <p>mari kita mengenal budaya Aceh lebih lanjut</p>
+            <a href="#section1">Getting Started</a>
+        </div>
+    </div>
+
+    <aside>
+        <button class="accordion">
+            click me!
+        </button>
+        <div class="panel">
+            <img src="profil.jpg" alt="">
+            <h1>Mahran Radifan Zhafir</h1>
+            <p>Kenalin, aku Mahran, peserta SIB Dicoding Front End ReactJS</p>
+        </div>
+
+    </aside>
+    <main id="section1">
+
+        <article>
+            <h1>Makmeugang</h1>
+            <p>Meugang atau makmeugang adalah sebuah kata yang sangat populer di Aceh setiap kali Bulan Ramadhan tiba.
+                Meugang atau makmeugang adalah tradisi yang sudah berlangsung turun temurun di Aceh, semenjak masa
+                kerajaan Aceh.
+                Tradisi berbagi daging sapi, kerbau, dan kambing ini masih terus diletarikan oleh masyarakat Aceh, tidak
+                hanya di Aceh, tapi juga keturunan Aceh yang bermukim di luar negeri.
+            </p>
+            <p>Berikut cuplikan foto saat meugang berlangsung</p>
+            <img src="https://dialeksis.com/images/web/2021/04/meugang.jpg" alt="">
+            <img src="https://cdn-2.tstatic.net/aceh/foto/bank/images/warga-membeli-daging-meugang.jpg" alt="">
+            <p>Tradisi meugang berlangsung 3 kali dalam satu tahun, yaitu menjelang puasa Ramadhan, menjelang Idul
+                Fitri, dan menjelang Idul Adha.
+                Tradisi yang sarat makna kekeluargaan ini dilaksanakan pada 1-2 hari sebelum masuknya Bulan Ramadhan,
+                menjelang Idul Fitri, dan menjelang Idul Adha.Selama dua hari ini, suasana pasar maupun pada berbagai
+                tempat dipenuhi dengan para penjual daging, baik daging lembu maupun daging kerbau.
+                Bukan tanpa alasan masyarakat Aceh melakukan tradisi demikian, bahkan mereka yang tinggal di luar Aceh
+                pun melakukan tradisi meugang.
+            </p>
+            <p>
+                Daging ini biasanya dimakan bersama keluarga melalui sebuah masakan khas daerah itu sendiri. misalnya
+                dimasak menjadi masakan yang bernama Kuah Beulangong.
+                Kuah Beulangong sendiri adalah kuah yang dibuat dari daging yang dibakar dan ditambahkan bumbu yang
+                dapat ditemukan di daerah Aceh. berikut adalah contoh
+                masakan kuah beulangong yang dibuat oleh para penjual daging di Aceh.
+            </p>
+            <img src="https://cdn-2.tstatic.net/travel/foto/bank/images/kuah-beulangong-img.jpg" alt="">
+            <img src="https://kebudayaan.kemdikbud.go.id/bpnbaceh/wp-content/uploads/sites/15/2018/12/19120595_139867829910913_6949231611476967424_n.jpg"
+                alt="">
+        </article>
+
+        <article id="section2">
+            <h1>Peusijuek</h1>
+            <p>
+                Peusijuek adalah sebuah prosesi adat dalam budaya masyarakat Aceh yang masih dipraktikan hingga saat
+                ini. Tradisi peusijuek ini dilakukan pada hampir semua kegiatan adat dalam kehidupan masyarakat di Aceh.
+                Misalnya ketika memulai sebuah usaha, menyelesaikan persengketaan, terlepas atau selesai dari musibah,
+                menempati rumah baru, merayakan kelulusan, memberangkatkan dan menyambut kedatangan haji, kembalinya
+                keluarga dari perantauan dan masih banyak lagi.
+            </p>
+            <p>
+                Pada kalangan masyarakat pedesaan di Aceh peusijuek merupakan prosesi adat yang cukup biasa dilakukan
+                bahkan untuk hal-hal yang kecil sekalipun misalnya ketika membeli kendaraan baru atau ketika hendak
+                menabur benih padi di sawah.
+                Sementara bagi masyarakat perkotaan yang lebih modern tradisi peusijuek ini hanya dilakukan dalam
+                kegiatan-kegiatan adat saja misalnya dalam prosesi adat perkawinan.
+            </p>
+            <img src="https://primetimes.id/wp-content/uploads/2020/11/IMG-20201117-WA0446.jpg" alt="">
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2022 Mahran Radifan Zhafir</p>
+    </footer>
+
+
+</body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>
